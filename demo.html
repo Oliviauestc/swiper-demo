@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Throttle</title>
+    <link href="./swiper.css" rel="stylesheet" type="text/css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="swipper-container">
+      <div class="list">
+        <img src="./rotation1.jpg">
+        <img src="./rotation2.jpg">
+        <img src="./rotation3.jpg">
+        <img src="./rotation4.jpg">
+        <img src="./rotation5.jpg">
+      </div>
+      <div class="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+      </div>
+      <a href="javascript:void(0)" class="prev arrow">&lt;</a>
+      <a href="javascript:void(0)" class="next arrow">&gt;</a>
+    </div>
+    <script type='text/javascript' src='./swiper.js'></script>
+    <script type="text/javascript"> 
+       new Swiper('swipper-container');
+    </script>
+  </body>
+</html>
