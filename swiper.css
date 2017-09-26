@@ -1,0 +1,63 @@
+#swipper-container{
+        position:relative;
+        width:1500px;  /*轮播区域宽度，可以视图片宽度而定*/
+        height:410px;   /*轮播区域高度，可以视图片高度而定*/
+        overflow:hidden;  /*重要！！！表示只能显示width这么宽的宽度，超出的部分隐藏起来*/
+ }
+#swipper-container .list{
+        position:absolute;
+        z-index:1;
+        width:100%;/*在js中会根据图片的数量和宽度重新设定这个宽度*/
+        height:100%;
+}
+#swipper-container .list img{
+        float:left;    /*平铺所有的轮播图片*/
+}
+#swipper-container .buttons{
+        position:absolute;
+        left:50%;
+        bottom:20px;
+        z-index:2;
+        height:10px;
+        width:100px;
+}
+#swipper-container .buttons span{
+        float:left;
+        margin-right:5px;
+        width:10px;
+        height:10px;
+        border:1px solid #fff;
+        border-radius: 50%;
+        background-color: #333;
+        cursor:pointer;
+}
+#swipper-container .buttons span.on {
+        background: orangered;
+}
+#swipper-container .arrow{
+        position:absolute;
+        top:40%;
+        z-index:2;
+        display:none;
+        width:40px;
+        height:40px;
+        font-size:36px;
+        font-weight:bold;
+        line-height: 39px;
+        text-align: center;
+        color:#666;
+        background-color:rgba(0, 0, 0, 0.3);
+        cursor:pointer;
+}
+#swipper-container:hover .arrow {
+        display: block;
+}
+#swipper-container .arrow:hover {
+        background-color: rgba(0, 0, 0, .7);
+}
+#swipper-container .prev {
+        left: 20px;
+}
+#swipper-container .next {
+        right: 20px;
+}
